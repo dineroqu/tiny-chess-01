@@ -14,6 +14,15 @@ MAKEFUN_ENV_URL=http://127.0.0.1:8080 python3 main.py
 
 It plays every game the env serves, posting UCI moves until the trial is done.
 
+## Results
+
+Practice trials against the house ladder (6 games, colours alternating):
+
+- Trial 0: 4 won, 0 drawn, 2 lost — Elo 1,451 (all 6 games by checkmate; wins over depth-2, depth-3, depth-4 and nodes-250k)
+- Trial 1: 3 won, 0 drawn, 3 lost — Elo 1,279
+
+House baseline is about 1,365 Elo on the practice trials. No illegal moves, no timeouts; slowest single move about 3 seconds, inside the 10-second limit.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=tvfbjxfd&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
